@@ -1,0 +1,18 @@
+// ------------------------------------------------------------------
+// List of ignite-ml-h2o-model-parser module's dependencies provided as a part of this distribution.
+// ------------------------------------------------------------------
+
+==============================================================================
+For h2o-genmodel (https://github.com/h2oai/h2o-3) ai.h2o:h2o-genmodel:pom:3.26.0.8
+==============================================================================
+This product bundles h2o-genmodel which is available under the following:
+The Apache Software License, Version 2.0. For details, see http://www.apache.org/licenses/LICENSE-2.0.txt.
+
+==============================================================================
+For ignite-ml (http://ignite.apache.org) org.apache.ignite:ignite-ml:jar:2.9.0
+==============================================================================
+This product bundles ignite-ml which is available under the following:
+The Apache Software License, Version 2.0. For details, see http://www.apache.org/licenses/LICENSE-2.0.txt.
+
+
+
