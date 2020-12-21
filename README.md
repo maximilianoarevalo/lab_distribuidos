@@ -4,4 +4,4 @@ Integrantes:
 
 Maximiliano Arévalo - 
 Jorge Ayala - 
-Juan Fernández - 
+Juan Fernández 
