@@ -2,6 +2,6 @@
 
 Integrantes:
 
-Maximiliano Arévalo
-Jorge Ayala
-Juan Fernández
+Maximiliano Arévalo - 
+Jorge Ayala - 
+Juan Fernández - 
