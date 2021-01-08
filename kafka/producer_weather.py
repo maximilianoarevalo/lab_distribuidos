@@ -2,7 +2,7 @@ from confluent_kafka import admin, Producer
 import requests
 import pickle
 import json
-
+import time
 
 city = "santiago"
 api_key = "e9185b28e9969fb7a300801eb026de9c"
