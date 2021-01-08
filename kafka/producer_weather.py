@@ -14,7 +14,7 @@ KAFKA_CONFIG = {
 
 
 def get_city_weather(city_name, api_key):
-    url = "http://api.openweathermap.org/data/2.5/weather?q={}&appid={}"
+    url = "http://api.openweathermap.org/data/2.5/weather?q={}&appid={}&units=metric"
     url = url.format(city_name, api_key)
     request = requests.get(url)
     data = request.json()
@@ -27,13 +27,10 @@ new_topic = admin.NewTopic("weather", 1, 1)
 kafka_client.create_topics([new_topic])
 producer = Producer(KAFKA_CONFIG)
 while True:
-    calls += 1
-    query = current_city(city, api_key)
+    query = get_city_weather(city, api_key)
     if query["cod"] != 200:
         print("error")
         break
     else:
-        print(calls)
         producer.produce("weather", pickle.dumps(query))
-
-
+    time.sleep(1800)
