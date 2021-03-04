@@ -46,7 +46,7 @@ import axios from 'axios'
         },
         show: true,
         showDismissibleAlert: false,
-        predict: 0
+        predict: ''
       }
     },
     methods: {
@@ -57,9 +57,11 @@ import axios from 'axios'
           original: this.form.original,
         };
         //axios.post('http://localhost:8080/app/newPass',parameters)
-        axios.post('http://35.199.69.82:8080/app/newPass',parameters)
+        console.log(parameters.original)
+        axios.get('http://35.232.177.132:5000/model/'+parameters.original.toString())
         .then((response) => {
-          this.predict = response.data.predict
+          this.predict = response.data
+          
         })
         .catch((error)=> console.log(error))
         //alert(JSON.stringify(this.form))

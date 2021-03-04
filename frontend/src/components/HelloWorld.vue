@@ -30,7 +30,7 @@ import axios from 'axios'
     },
     mounted(){
       //axios.get('http://localhost:8080/app/pass')
-      axios.get('http://35.199.69.82:8080/app/pass')
+      axios.get('http://35.232.177.132:5000/model/')
       .then(response => (this.info = response))
     }
   }
